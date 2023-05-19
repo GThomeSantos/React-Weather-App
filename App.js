@@ -62,7 +62,7 @@ function App() {
           <p>{weather.description}</p>
 
           <h2>Prediction</h2>
-          <ul>
+          <ol>
             {weather.forecast.map((dayForecast, index) => {
               return (
                 <li key={uuid()}>
@@ -84,7 +84,7 @@ function App() {
                 </li>
               );
             })}
-          </ul>
+          </ol>
         </>
       )}
       <h1></h1>
